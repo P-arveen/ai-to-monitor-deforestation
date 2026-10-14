@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+
+.navitem{
+
+   position: relative;
+   color: rgb(48, 107, 9);
+  transform-origin: right;
+
+
+}
+
+.navitem:hover::after{
+transform: scaleX(1);
+transform-origin: left;
+}
+
+.navitem::after {
+  position:absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform ease .5s;
+  border-radius:200px;
+  background-color: rgb(48, 107, 9); /* Customize styling */
+}

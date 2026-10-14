@@ -1,0 +1,17 @@
+# Python virtual environment
+backend/myenv/
+
+# Python cache
+backend/__pycache__/
+__pycache__/
+*.pyc
+
+# Node.js dependencies
+frontend/node_modules/
+
+# Large model file
+backend/kmeans_pixel_model.pkl
+
+# Generated outputs
+backend/ndvi_outputs/
+backend/processed_data/
